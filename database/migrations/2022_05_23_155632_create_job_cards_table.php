@@ -15,7 +15,7 @@ class CreateJobCardsTable extends Migration
     {
         Schema::create('job_cards', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigIncrements('customerid');
+            $table->integer('customerid');
             $table->integer('jobid');
             $table->string('title');
             $table->string('status');
